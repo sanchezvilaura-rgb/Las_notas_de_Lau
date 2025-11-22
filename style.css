@@ -1,0 +1,130 @@
+.header-text {
+    margin-right: 60px !important;
+}
+.video-modal {
+  z-index: 999999 !important;
+}
+
+.video-modal-content {
+  z-index: 999999 !important;
+}
+
+.close-modal {
+  z-index: 99999999 !important;
+}
+
+/* ===========================
+   BLOC INTERACTIVO
+=========================== */
+.bloc-interactivo {
+    padding: 60px 60px;
+    background: #0c0c0f;
+    color: #fff;
+    width: 50%;
+    box-sizing: border-box;
+    position: center;
+}
+
+.bloc-interactivo h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #d71bec;
+    text-shadow: 0 0 10px #8f4e83;
+}
+
+.tools {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tools button {
+    background: #1a1a1f;
+    border: 1px solid #7e12b0;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+}
+
+.tools button:hover {
+    background: #c116c1;
+    color: #000;
+}
+
+/* Área escribible */
+.bloc-area {
+    width: 100%;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid #8514b9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px #b785b5;
+    outline: none;
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+/* Stickers */
+.sticker {
+    position: absolute;
+    padding: 10px 15px;
+    background: #fffc94;
+    color: #000;
+    border-radius: 6px;
+    cursor: grab;
+    font-size: 14px;
+    user-select: none;
+    box-shadow: 0 0 8px #fff;
+}
+ /* ========== GAME SECTION ========== */
+.game-section{padding:80px 20px;background:linear-gradient(180deg,#0c0c0f 0%,#0a0a0f 100%);position:relative;text-align:center;overflow:hidden;}
+.game-section-title{font-family:'Dancing Script',cursive;font-size:2.5rem;color:#ff69b4;text-shadow:0 0 20px #ff69b4,0 0 40px #ff00ff;margin-bottom:10px;}
+.game-section-subtitle{color:#00ffff;font-size:1rem;margin-bottom:30px;text-shadow:0 0 10px #00ffff;}
+.game-wrapper{max-width:600px;margin:0 auto;background:rgba(10,10,15,0.8);border-radius:20px;overflow:hidden;box-shadow:0 0 40px rgba(255,105,180,0.3),0 0 80px rgba(0,255,255,0.15);border:1px solid rgba(255,255,255,0.1);}
+.game-header{text-align:center;padding:15px;background:rgba(0,0,0,0.5);backdrop-filter:blur(10px);}
+.game-logo-title{font-family:'Dancing Script',cursive;font-size:1.5em;color:#ff69b4;text-shadow:0 0 15px #ff69b4,0 0 30px #ff00ff;margin:0;}
+.game-logo-subtitle{color:#00ffff;font-size:0.7em;font-weight:700;letter-spacing:3px;text-shadow:0 0 10px #00ffff;margin:3px 0 0 0;}
+.game-stats{display:flex;justify-content:center;gap:30px;padding:10px;background:rgba(0,0,0,0.3);}
+.game-stat{text-align:center;}
+.game-stat-label{font-size:0.7em;color:#888;text-transform:uppercase;letter-spacing:1px;}
+.game-stat-value{font-size:1.5em;font-weight:700;}
+.stat-score .game-stat-value{color:#00ffff;text-shadow:0 0 10px #00ffff;}
+.stat-lives .game-stat-value{color:#ff69b4;text-shadow:0 0 10px #ff69b4;}
+.game-area{position:relative;width:100%;height:400px;overflow:hidden;background:rgba(0,0,0,0.2);}
+.falling-item{position:absolute;font-size:2em;cursor:pointer;filter:drop-shadow(0 0 10px rgba(255,255,255,0.5));transition:transform 0.1s ease;user-select:none;}
+.falling-item:hover{transform:scale(1.2);}
+.falling-item.nota,.falling-item.punto{animation:fall linear forwards;}
+.falling-item.caught{animation:pop 0.3s ease-out forwards;}
+.game-player{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:2.5em;filter:drop-shadow(0 0 15px #ff69b4);transition:left 0.1s ease-out;z-index:20;}
+.game-screen{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(10,10,15,0.95);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;backdrop-filter:blur(10px);}
+.game-screen.hidden{display:none;}
+.screen-title{font-family:'Dancing Script',cursive;font-size:2em;color:#ff69b4;text-shadow:0 0 20px #ff69b4,0 0 40px #ff00ff;margin-bottom:10px;animation:floatGame 2s ease-in-out infinite;}
+.screen-subtitle{font-size:0.9em;color:#aaa;margin-bottom:20px;text-align:center;padding:0 20px;}
+.screen-score{font-size:2.5em;font-weight:700;color:#00ffff;text-shadow:0 0 20px #00ffff;margin:15px 0;}
+.screen-instructions{background:rgba(255,255,255,0.05);border-radius:15px;padding:15px 20px;margin:15px 0;border:1px solid rgba(255,255,255,0.1);}
+.instruction{display:flex;align-items:center;gap:12px;margin:8px 0;font-size:0.85em;color:#ccc;}
+.instruction-icon{font-size:1.5em;}
+.instruction-good{color:#22c55e;}
+.instruction-bad{color:#ff6b6b;}
+.btn-play{padding:12px 40px;border-radius:30px;background:linear-gradient(135deg,#ff69b4,#a855f7,#00ffff);border:none;color:#fff;font-size:1em;font-weight:700;cursor:pointer;transition:all 0.3s ease;box-shadow:0 0 30px rgba(255,105,180,0.5);margin-top:15px;}
+.btn-play:hover{transform:scale(1.05);box-shadow:0 0 50px rgba(255,105,180,0.7),0 0 80px rgba(0,255,255,0.4);}
+.game-effect{position:absolute;font-size:1.3em;font-weight:700;pointer-events:none;animation:floatUp 1s ease-out forwards;}
+.effect-good{color:#22c55e;text-shadow:0 0 10px #22c55e;}
+.effect-bad{color:#ff6b6b;text-shadow:0 0 10px #ff6b6b;}
+.lives-display{display:flex;gap:5px;justify-content:center;}
+.heart{font-size:1.2em;transition:all 0.3s ease;}
+.heart.lost{opacity:0.2;transform:scale(0.8);}
+.final-message{font-size:0.9em;color:#888;margin-top:10px;font-style:italic;}
+
+@keyframes fall{0%{transform:translateY(-60px);}100%{transform:translateY(450px);}}
+@keyframes pop{0%{transform:scale(1);opacity:1;}50%{transform:scale(1.5);opacity:0.5;}100%{transform:scale(0);opacity:0;}}
+@keyframes floatUp{0%{opacity:1;transform:translateY(0) scale(1);}100%{opacity:0;transform:translateY(-50px) scale(1.5);}}
+@keyframes floatGame{0%,100%{transform:translateY(0px);}50%{transform:translateY(-8px);}}
